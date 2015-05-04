@@ -1,0 +1,15 @@
+data - input data array. Assume 2d
+tree - output emst tree
+
+tree_cols = base index for each data point
+tree(0, tree_cols) will get the source edge base index for tree_cols=n index
+
+data_rows = width of data (data.n_rows)
+data(data_rows, tree(0, tree_cols)) will get each dimension of length data_rows of the source edge from the tree tree_cols
+
+ComputeMST tree [0][n] row - source edge (from input) index
+                [1][n] row - destination edge (from input) index
+                [2][n] row - distance from source edge to destination edge
+
+
+sudo apt-get install libboost-python1.55-dev
